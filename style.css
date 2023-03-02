@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
+}
+form {
+  background-color: whitesmoke;
+  padding: 20px 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 500px;
+  border-radius: 20px;
+}
+label {
+  font-weight: 700;
+}
+.form-row {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+.form-row:nth-of-type(2) .input-container {
+  width: 45%;
+}
+.form-row:nth-of-type(2) {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  outline: none;
+  appearance: none;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 2px solid gray;
+}
+input[type="text"].invalid,
+input[type="password"].invalid,
+input[type="email"].invalid {
+  border: 2px solid lightcoral;
+}
+.error {
+  font-size: 12px;
+  padding: 0 5px;
+  color: lightcoral;
+}
+input[type="text"].valid,
+input[type="email"].valid,
+input[type="password"].valid {
+  border: 2px solid green;
+}
+button {
+  appearance: none;
+  border: none;
+  color: aliceblue;
+  background-color: purple;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+}
